@@ -107,6 +107,13 @@ export default function Footer({ onNavigate }: FooterProps) {
               >
                 Datenschutz
               </button>
+              <button
+                onClick={() => onNavigate('agb')}
+                className="text-salon-black text-sm hover:text-beige-dark transition-colors focus:outline-none focus:ring-2 focus:ring-salon-black focus:ring-offset-2 rounded px-2 py-1"
+                data-testid="link-agb-footer"
+              >
+                AGB
+              </button>
             </div>
           </div>
         </div>
