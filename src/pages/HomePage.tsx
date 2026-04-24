@@ -53,7 +53,7 @@ export default function HomePage({ onNavigate }: HomePageProps) {
             description="Die dauerhafte Haarentfernung mittels Alexandritlaser stellt eine hochwirksame Lösung zur langfristigen Reduzierung unerwünschter Körperhaare dar."
           />
           <FeatureCard
-            icon={<Award className="w-8 h-8" />}
+            icon={<Sparkles className="w-8 h-8" />}
             title="Viele weitere Behandlungen"
             description="Entdecken Sie unser vollständiges Angebot an professionellen Beauty-Treatments."
           />
