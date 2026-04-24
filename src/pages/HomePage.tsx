@@ -13,8 +13,7 @@ export default function HomePage({ onNavigate }: HomePageProps) {
       <Hero
         onBookingClick={() => onNavigate('booking')}
         onReferencesClick={() => {
-          const instagramUrl = 'https://www.instagram.com/beautybymel_dn/';
-          window.open(instagramUrl, '_blank', 'noopener,noreferrer');
+          window.open('https://www.google.com/search?sca_esv=d855ddeff0d9d054&sxsrf=ANbL-n5busj1V_bxBf5HnIDUIb3zTmwSyg:1777037230068&q=beauty+by+mel+d%C3%BCren&si=AL3DRZEsmMGCryMMFSHJ3StBhOdZ2-6yYkXd_doETEE1OR-qObH3AjJ9fXC05qs_J5yCO9Qcf6cp8LOP-4hGRCG54gPj_55IiBjQG-OA_4D2mtHICPMSiyU%3D&uds=ALYpb_lLt3rF4OntvAcKw6YR8l5VTVY55Cu1H_E90GKPnmQf11QUg_9RRJ_8nS4GTKAvAV-IT2opd6es8A7ri4mLOT5MB5l72R2j3NebO5UQ2uFlQMdBHoz6lnVMaK87QWZ_mZ-_6qDE&sa=X&ved=2ahUKEwjKgOfGy4aUAxVnxgIHHX24HAIQ3PALegQIExAE&biw=1358&bih=636&dpr=1', '_blank', 'noopener,noreferrer');
         }}
       />
 
