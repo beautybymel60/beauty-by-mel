@@ -97,57 +97,57 @@ export default function TeamPage() {
 
       <div className="max-w-6xl mx-auto px-6 py-20 space-y-24">
         {team.map((member, index) => (
-          <div
-            key={member.name}
-            className={`grid grid-cols-1 md:grid-cols-2 gap-12 items-center ${
-              index % 2 === 1 ? "md:grid-flow-dense" : ""
-            }`}
-            data-testid={`card-team-${index}`}
-          >
-            <div className={index % 2 === 1 ? "md:col-start-2" : ""}>
-              <img
-                src={member.image}
-                alt={member.name}
-                className="rounded-2xl shadow-xl w-full object-cover aspect-[3/4]"
-              />
-            </div>
-
+          <div key={member.name} data-testid={`card-team-${index}`}>
             <div
-              className={`space-y-6 ${index % 2 === 1 ? "md:col-start-1 md:row-start-1" : ""}`}
+              className={`grid grid-cols-1 md:grid-cols-2 gap-12 items-start ${
+                index % 2 === 1 ? "md:grid-flow-dense" : ""
+              }`}
             >
-              <div>
-                <p className="text-sm uppercase tracking-[0.2em] text-salon-black opacity-50 mb-2">
-                  {member.role}
-                </p>
-                <h2 className="text-3xl md:text-4xl font-bold text-salon-black font-serif">
-                  {member.name}
-                </h2>
+              <div className={`md:pt-10 ${index % 2 === 1 ? "md:col-start-2" : ""}`}>
+                <img
+                  src={member.image}
+                  alt={member.name}
+                  className="rounded-2xl shadow-xl w-full object-cover aspect-[3/4]"
+                />
               </div>
 
-              <div className="space-y-4">
-                {member.paragraphs.map((para, i) => (
-                  <p
-                    key={i}
-                    className="text-lg text-salon-black opacity-70 leading-relaxed"
-                  >
-                    {para}
+              <div
+                className={`space-y-6 ${index % 2 === 1 ? "md:col-start-1 md:row-start-1" : ""}`}
+              >
+                <div>
+                  <p className="text-sm uppercase tracking-[0.2em] text-salon-black opacity-50 mb-2">
+                    {member.role}
                   </p>
-                ))}
-              </div>
+                  <h2 className="text-3xl md:text-4xl font-bold text-salon-black font-serif">
+                    {member.name}
+                  </h2>
+                </div>
 
-              <div>
-                <p className="text-sm uppercase tracking-[0.15em] text-salon-black opacity-50 mb-3">
-                  Spezialisierungen
-                </p>
-                <div className="flex flex-wrap gap-2">
-                  {member.specialties.map((specialty) => (
-                    <span
-                      key={specialty}
-                      className="bg-beige border border-beige-dark text-salon-black text-sm px-4 py-1.5 rounded-full"
+                <div className="space-y-4">
+                  {member.paragraphs.map((para, i) => (
+                    <p
+                      key={i}
+                      className="text-lg text-salon-black opacity-70 leading-relaxed"
                     >
-                      {specialty}
-                    </span>
+                      {para}
+                    </p>
                   ))}
+                </div>
+
+                <div>
+                  <p className="text-sm uppercase tracking-[0.15em] text-salon-black opacity-50 mb-3">
+                    Spezialisierungen
+                  </p>
+                  <div className="flex flex-wrap gap-2">
+                    {member.specialties.map((specialty) => (
+                      <span
+                        key={specialty}
+                        className="bg-beige border border-beige-dark text-salon-black text-sm px-4 py-1.5 rounded-full"
+                      >
+                        {specialty}
+                      </span>
+                    ))}
+                  </div>
                 </div>
               </div>
             </div>
