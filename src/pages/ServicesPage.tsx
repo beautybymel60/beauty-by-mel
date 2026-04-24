@@ -32,26 +32,13 @@ export default function ServicesPage() {
     {
       icon: <Star className="w-12 h-12" />,
       title: 'Gesichtsbehandlungen',
-      description: 'Gesichtsbehandlungen sind eine effektive Möglichkeit die Haut zu reinigen und zu revitalisieren. Bei der manuellen Ausreinigung werden Unreinheiten gezielt entfernt, während das Aquafacial eine sanfte, hydrierende Behandlung bietet. Microneedling stimuliert die Kollagenproduktion und verbessert das Hautbild, während die Microdermabrasion abgestorbene Hautzellen sanft abträgt. Ein Fruchtsäurepeeling sorgt für ein frisches, strahlendes Hautbild, indem es die oberste Hautschicht erneuert.',
+      description: 'Gesichtsbehandlungen sind eine effektive Möglichkeit die Haut zu reinigen und zu revitalisieren. Bei der manuellen Ausreinigung werden Unreinheiten gezielt entfernt, während das Aquafacial eine sanfte, hydrierende Behandlung bietet. Microneedling stimuliert die Kollagenproduktion und verbessert das Hautbild, während die Microdermabrasion abgestorbene Hautzellen sanft abträgt.',
       image: `${import.meta.env.BASE_URL}Gesichtsbehandlungen.png`,
       treatments: [
         'Manuelle Ausreinigung - gezielte Entfernung von Unreinheiten',
         'Aquafacial - sanfte, hydrierende Behandlung',
         'Microneedling - Stimulation der Kollagenproduktion',
         'Microdermabrasion - sanftes Abtragen abgestorbener Hautzellen',
-        'Fruchtsäurepeeling - frisches, strahlendes Hautbild',
-      ],
-    },
-    {
-      icon: <Heart className="w-12 h-12" />,
-      title: 'Head Spa Behandlung',
-      description: 'Erleben Sie die revitalisierende Wirkung unserer Headspa-Behandlung, die speziell entwickelt wurde, um Stress abzubauen und das allgemeine Wohlbefinden zu fördern. Wir verwenden sanfte Techniken, um Verspannungen im Kopf- und Nackenbereich zu lösen und die Durchblutung zu verbessern. Lassen Sie sich von einer beruhigenden Atmosphäre umhüllen und genießen Sie eine Auszeit Körper und Geist. Gönnen Sie sich diese entspannende Erfahrung und fühlen Sie sich erfrischt und belebt!',
-      image: `${import.meta.env.BASE_URL}Headspa.png`,
-      treatments: [
-        'Kopf- und Nackenmassage - Lösung von Verspannungen',
-        'Durchblutungsförderung - für mehr Vitalität',
-        'Stressabbau - tiefe Entspannung für Körper und Geist',
-        'Beruhigende Atmosphäre - Ihre persönliche Auszeit',
       ],
     },
     {
