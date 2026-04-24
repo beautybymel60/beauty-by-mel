@@ -18,27 +18,27 @@ export default function Footer({ onNavigate }: FooterProps) {
             <div className="space-y-2 text-salon-black text-sm">
               <div className="flex justify-between">
                 <span>Montag:</span>
-                <span>10:00-20:00 Uhr</span>
+                <span>10:00-19:00 Uhr</span>
               </div>
               <div className="flex justify-between">
                 <span>Dienstag:</span>
-                <span>10:00-20:00 Uhr</span>
+                <span>10:00-19:00 Uhr</span>
               </div>
               <div className="flex justify-between">
                 <span>Mittwoch:</span>
-                <span>10:00-20:00 Uhr</span>
+                <span>10:00-19:00 Uhr</span>
               </div>
               <div className="flex justify-between">
                 <span>Donnerstag:</span>
-                <span>10:00-20:00 Uhr</span>
+                <span>10:00-19:00 Uhr</span>
               </div>
               <div className="flex justify-between">
                 <span>Freitag:</span>
-                <span>10:00-18:00 Uhr</span>
+                <span>10:00-19:00 Uhr</span>
               </div>
               <div className="flex justify-between">
                 <span>Samstag:</span>
-                <span>10:00-14:00 Uhr</span>
+                <span>10:00-15:00 Uhr</span>
               </div>
             </div>
           </div>
