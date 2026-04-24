@@ -1,7 +1,7 @@
 import Hero from '../components/Hero';
 import Section from '../components/Section';
 import FeatureCard from '../components/FeatureCard';
-import { Sparkles, Heart, Award } from 'lucide-react';
+import { Sparkles, Heart } from 'lucide-react';
 
 interface HomePageProps {
   onNavigate: (page: string) => void;
@@ -41,11 +41,6 @@ export default function HomePage({ onNavigate }: HomePageProps) {
             icon={<Heart className="w-8 h-8" />}
             title="Gesichtsbehandlungen"
             description="Individuelle Pflege für strahlende und gesunde Haut."
-          />
-          <FeatureCard
-            icon={<Award className="w-8 h-8" />}
-            title="Head Spa Behandlung"
-            description="Entspannende Kopfmassagen für tiefe Entspannung und Wohlbefinden."
           />
           <FeatureCard
             icon={<Sparkles className="w-8 h-8" />}
