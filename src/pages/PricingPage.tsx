@@ -28,10 +28,8 @@ export default function PricingPage({ onNavigate }: PricingPageProps) {
     {
       title: 'SKIN',
       items: [
-        { name: 'Klassische Ausreinigung inkl. Augenbrauen zupfen', price: '69,00 €' },
-        { name: 'Microdermabrasion', price: '69,00 €' },
-        { name: 'Dermaplaning', price: '69,00 €' },
-        { name: 'Fruchtsäurepeeling', price: '69,00 €' },
+        { name: 'Klassische Ausreinigung inkl. Augenbrauen zupfen', price: '89,00 €' },
+        { name: 'Microdermabrasion', price: '89,00 €' },
       ],
     },
     {
@@ -39,19 +37,18 @@ export default function PricingPage({ onNavigate }: PricingPageProps) {
       items: [
         { name: 'Aquafacial + Needling', price: '169,00 €' },
         { name: 'Dermabrasion + Needling', price: '155,00 €' },
-        { name: 'Dermaplaning + Aquafacial', price: '139,00 €' },
-        { name: 'Dermaplaning + Needling', price: '139,00 €' },
       ],
     },
     {
       title: 'LIFTING',
       items: [
-        { name: 'Lashlifting inkl. Farbe', price: '50,00 €' },
+        { name: 'Lashlifting inkl. Farbe', price: '65,00 €' },
+        { name: 'Koreanisches Lashlifting inkl. Farbe', price: '65,00 €' },
         { name: 'Färben untere Wimpern', price: '53,00 €' },
         { name: 'Browlifting ohne Farbe', price: '52,00 €' },
         { name: 'Browlifting inkl. Farbe', price: '58,00 €' },
-        { name: 'Kombi LL + BL ohne Farbe', price: '85,00 €' },
-        { name: 'Kombi LL + BL mit Farbe', price: '95,00 €' },
+        { name: 'Kombi LL + BL ohne Farbe', price: '99,00 €' },
+        { name: 'Kombi LL + BL mit Farbe', price: '109,00 €' },
         { name: 'Augenbrauen zupfen', price: '15,00 €' },
         { name: 'Augenbrauen färben', price: '15,00 €' },
         { name: 'Kombi', price: '25,00 €' },
@@ -60,9 +57,9 @@ export default function PricingPage({ onNavigate }: PricingPageProps) {
     {
       title: 'WIMPERNVERLÄNGERUNG',
       items: [
-        { name: 'Classic 1:1 - Neumodellage', price: '89,00 €' },
-        { name: 'Classic 1:1 - Refill bis 3 Wochen', price: '55,00 €' },
-        { name: 'Classic 1:1 - Refill bis 4 Wochen', price: '60,00 €' },
+        { name: 'Classic 1:1 - Neumodellage', price: '95,00 €' },
+        { name: 'Classic 1:1 - Refill bis 3 Wochen', price: '60,00 €' },
+        { name: 'Classic 1:1 - Refill bis 4 Wochen', price: '65,00 €' },
         { name: 'Softvolumen 2D–3D - Neumodellage', price: '109,00 €' },
         { name: 'Softvolumen 2D–3D - Refill bis 3 Wochen', price: '70,00 €' },
         { name: 'Softvolumen 2D–3D - Refill bis 4 Wochen', price: '75,00 €' },
