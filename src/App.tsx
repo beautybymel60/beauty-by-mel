@@ -9,6 +9,7 @@ import PricingPage from './pages/PricingPage';
 import BookingPage from './pages/BookingPage';
 import ImpressumPage from './pages/ImpressumPage';
 import DatenschutzPage from './pages/DatenschutzPage';
+import AGBPage from './pages/AGBPage';
 import TeamPage from './pages/TeamPage';
 
 function App() {
@@ -30,6 +31,7 @@ function App() {
       team: 'Unser Team | Beauty by Mel',
       impressum: 'Impressum | Beauty by Mel',
       datenschutz: 'Datenschutz | Beauty by Mel',
+      agb: 'AGB | Beauty by Mel',
     };
 
     document.title = pageTitles[currentPage] || pageTitles.home;
@@ -55,6 +57,8 @@ function App() {
         return <ImpressumPage />;
       case 'datenschutz':
         return <DatenschutzPage />;
+      case 'agb':
+        return <AGBPage />;
       default:
         return <HomePage onNavigate={handleNavigate} />;
     }
