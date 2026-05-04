@@ -12,13 +12,35 @@ import DatenschutzPage from './pages/DatenschutzPage';
 import AGBPage from './pages/AGBPage';
 import TeamPage from './pages/TeamPage';
 
+const VALID_PAGES = [
+  'home', 'team', 'contact', 'services', 'training',
+  'pricing', 'booking', 'impressum', 'datenschutz', 'agb',
+];
+
+function getPageFromHash(): string {
+  const hash = window.location.hash.replace('#', '').toLowerCase();
+  return VALID_PAGES.includes(hash) ? hash : 'home';
+}
+
 function App() {
-  const [currentPage, setCurrentPage] = useState('home');
+  const [currentPage, setCurrentPage] = useState(getPageFromHash);
 
   const handleNavigate = (page: string) => {
-    setCurrentPage(page);
+    const target = VALID_PAGES.includes(page) ? page : 'home';
+    window.location.hash = target === 'home' ? '' : target;
+    setCurrentPage(target);
     window.scrollTo({ top: 0, behavior: 'smooth' });
   };
+
+  useEffect(() => {
+    const onHashChange = () => {
+      const page = getPageFromHash();
+      setCurrentPage(page);
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    };
+    window.addEventListener('hashchange', onHashChange);
+    return () => window.removeEventListener('hashchange', onHashChange);
+  }, []);
 
   useEffect(() => {
     const pageTitles: Record<string, string> = {
@@ -33,7 +55,6 @@ function App() {
       datenschutz: 'Datenschutz | Beauty by Mel',
       agb: 'AGB | Beauty by Mel',
     };
-
     document.title = pageTitles[currentPage] || pageTitles.home;
   }, [currentPage]);
 
