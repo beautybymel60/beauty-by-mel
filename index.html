@@ -12,5 +12,30 @@
   <body>
     <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>
+
+    <!-- NovaEase AI Chat Widget -->
+    <iframe src="https://app.novaease.ai/embed/widget-frame/wgt_hvtf2qeq7" style="position:fixed;bottom:20px;right:20px;width:100px;height:100px;border:none !important;z-index:999999;pointer-events:auto;background:transparent !important;background-color:transparent !important;" allowtransparency="true" frameborder="0" scrolling="no" allow="clipboard-write; microphone" id="po-widget-iframe-wgt_hvtf2qeq7"></iframe>
+    <script>
+    window.addEventListener('message', function(e) {
+      if (e.data && e.data.type === 'po-widget-resize' && e.data.widgetId === 'wgt_hvtf2qeq7') {
+        var f = document.getElementById('po-widget-iframe-wgt_hvtf2qeq7');
+        if (f) {
+          if (e.data.isOpen) {
+            f.style.pointerEvents = 'auto';
+            if (window.innerWidth <= 768) {
+              f.style.width = '100%'; f.style.height = '100dvh'; f.style.bottom = '0'; f.style.top = '0'; f.style.right = '0'; f.style.left = '0'; f.style.borderRadius = '0';
+            } else {
+              f.style.width = '440px'; f.style.height = '640px'; f.style.bottom = '20px'; f.style.top = 'auto'; f.style.borderRadius = '16px';
+              if ('bottom-right' === 'bottom-right') { f.style.right = '20px'; f.style.left = 'auto'; } else { f.style.left = '20px'; f.style.right = 'auto'; }
+            }
+          } else {
+            f.style.pointerEvents = 'auto';
+            f.style.width = '100px'; f.style.height = '100px'; f.style.bottom = '20px'; f.style.top = 'auto'; f.style.borderRadius = '0';
+            if ('bottom-right' === 'bottom-right') { f.style.right = '20px'; f.style.left = 'auto'; } else { f.style.left = '20px'; f.style.right = 'auto'; }
+          }
+        }
+      }
+    });
+    </script>
   </body>
 </html>
